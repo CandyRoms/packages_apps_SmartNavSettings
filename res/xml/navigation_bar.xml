@@ -34,6 +34,12 @@
             android:entryValues="@array/systemui_navbar_mode_values" />
 
         <PreferenceScreen
+            android:key="default_settings"
+            android:title="@string/default_settings"
+            android:summary="@string/default_settings_summary"
+		    android:fragment="org.candy.candyshop.fragments.StockNavbar" />
+
+        <PreferenceScreen
             android:key="smartbar_settings"
             android:title="@string/smartbar_settings_title"
             android:summary="@string/smartbar_settings_summary"

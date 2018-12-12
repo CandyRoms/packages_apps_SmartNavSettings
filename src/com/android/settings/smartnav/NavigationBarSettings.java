@@ -90,7 +90,6 @@ public class NavigationBarSettings extends SettingsPreferenceFragment implements
 
         int mode = Settings.Secure.getInt(getContentResolver(), Settings.Secure.NAVIGATION_BAR_MODE,
                 0);
-
         updateBarModeSettings(mode);
         mNavbarMode.setOnPreferenceChangeListener(this);
 
@@ -158,7 +157,7 @@ public class NavigationBarSettings extends SettingsPreferenceFragment implements
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         if (preference.equals(mNavbarMode)) {
             int mode = Integer.parseInt(((String) newValue).toString());
-            Settings.Secure.putInt(getContentResolver(),
+                    Settings.Secure.putInt(getContentResolver(),
                     Settings.Secure.NAVIGATION_BAR_MODE, mode);
             updateBarModeSettings(mode);
             return true;
