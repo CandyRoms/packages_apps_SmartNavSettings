@@ -101,7 +101,7 @@ public class PulseBlacklist extends SettingsPreferenceFragment implements
     public int getDialogMetricsCategory(int dialogId) {
         switch (dialogId) {
             case DIALOG_BLACKLIST_APPS:
-                return MetricsProto.MetricsEvent.AQUA;
+                return MetricsProto.MetricsEvent.CANDY;
             default:
                 return 0;
         }
@@ -125,7 +125,7 @@ public class PulseBlacklist extends SettingsPreferenceFragment implements
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.AQUA;
+        return MetricsProto.MetricsEvent.CANDY;
     }
 
     @Override
