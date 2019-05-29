@@ -40,8 +40,8 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.List;
 
-import com.aquarios.support.preferences.PackageListAdapter;
-import com.aquarios.support.preferences.PackageListAdapter.PackageItem;
+import org.candy.support.preferences.PackageListAdapter;
+import org.candy.support.preferences.PackageListAdapter.PackageItem;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
