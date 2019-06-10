@@ -34,6 +34,12 @@
             android:entryValues="@array/systemui_navbar_mode_values" />
 
         <PreferenceScreen
+            android:key="default_settings"
+            android:title="@string/default_settings"
+            android:summary="@string/default_settings_summary"
+		    android:fragment="org.candy.candyshop.fragments.StockNavbar" />
+
+        <PreferenceScreen
             android:key="smartbar_settings"
             android:title="@string/smartbar_settings_title"
             android:summary="@string/smartbar_settings_summary"
@@ -45,14 +51,11 @@
             android:summary="@string/fling_settings_summary"
             android:fragment="com.android.settings.smartnav.FlingSettings" />
 
-        <Preference
-            android:key="default_settings"
-            android:title="@string/default_settings"
-            android:summary="@string/default_settings_summary">
- <!--           <intent android:action="android.intent.action.MAIN"
-                android:targetPackage="com.android.systemui"
-                android:targetClass="com.android.systemui.tuner.NavBarTunerActivity" /> -->
-        </Preference>
+        <PreferenceScreen
+            android:key="pulse_settings"
+            android:title="@string/pulse_settings"
+            android:summary="@string/pulse_settings_summary"
+            android:fragment="com.android.settings.smartnav.PulseSettings" />
 
     </PreferenceCategory>
     
@@ -80,10 +83,6 @@
                 android:max="135"
                 settings:min="65"
                 settings:units="%" />
-        <PreferenceScreen
-            android:key="pulse_settings"
-            android:title="@string/pulse_settings"
-            android:summary="@string/pulse_settings_summary"
-            android:fragment="com.android.settings.smartnav.PulseSettings" />
+
     </PreferenceCategory>
 </PreferenceScreen>
